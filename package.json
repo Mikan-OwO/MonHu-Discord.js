@@ -1,0 +1,21 @@
+{
+  "name": "monhu-discordjs",
+  "version": "0.0.1",
+  "description": "MonitorHumanが作った、簡単にDiscordのBotを作成するNPMモジュール",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TarochanChannel/MonHu-Discord.js.git"
+  },
+  "keywords": [
+    "Discord",
+    "DiscordBot",
+    "MonHu"
+  ],
+  "author": "monhu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TarochanChannel/MonHu-Discord.js/issues"
+  },
+  "homepage": "https://github.com/TarochanChannel/MonHu-Discord.js#readme"
+}
