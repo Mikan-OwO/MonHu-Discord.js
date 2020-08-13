@@ -1,10 +1,10 @@
 {
   "name": "monhu-discordjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "MonitorHumanが作った、簡単にDiscordのBotを作成するNPMモジュール",
   "main": "index.js",
   "dependencies": {
-    "discord.js": "^12.2.0",
+    "discord.js": "12.2.0",
     "node-cron": "^2.0.3"
   },
   "engines": {
@@ -13,6 +13,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TarochanChannel/MonHu-Discord.js.git"
+  },
+  "scripts" : {
+    "postinstall": "node -e \"require('monhu-discordjs/thankyou-message.js')\""
   },
   "keywords": [
     "Discord",

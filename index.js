@@ -18,7 +18,7 @@ function sleep(waitSec, callback) {
 //準備が完了した際に、実行する物
 /*  ガイド  */
 client.on("ready", () => {
-    console.log("準備が完了しました。");
+    console.log(`${client.user.tag}として、準備が完了しました。\nBotをご利用いただけます。`);
     cron.schedule("0,30 * * * * *", () => {
         client.user.setPresence({
             activity: {
@@ -39,7 +39,7 @@ exports.config = function (cnfg, cnfgf) {
     client.on("message", message => {
         if (message.author.id == client.user.id) return;
         Object.keys(configmsg).forEach(function (key) {
-            if (message.content == key) message.channel.send(configmsg[key])
+            if (message.content == key) message.channel.send(configmsg[key].replace(/{ping}/g, client.ws.ping))
         });
     })
 };
