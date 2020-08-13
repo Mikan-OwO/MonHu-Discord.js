@@ -7,7 +7,7 @@ create by MonHu  */
 /*  ガイド内容 */
 
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const client = new Discord.Client();
 const fs = require("fs");
 const cron = require("node-cron");
 
@@ -50,5 +50,5 @@ mondjs.login('トークン');
 ↑のを使用してください。
 */
 exports.login = function (token) {
-    return bot.login(token);
+    return client.login(token);
 };
