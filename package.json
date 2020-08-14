@@ -1,6 +1,6 @@
 {
   "name": "monhu-discordjs",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "MonitorHumanが作った、簡単にDiscordのBotを作成するNPMモジュール",
   "main": "index.js",
   "dependencies": {
@@ -23,7 +23,8 @@
     "MonHu",
     "monhu-discordjs",
     "discord.js",
-    "discordjs"
+    "discordjs",
+    "Tarochan"
   ],
   "author": "monhu",
   "license": "MIT",

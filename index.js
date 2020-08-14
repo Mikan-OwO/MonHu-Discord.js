@@ -19,11 +19,11 @@ function sleep(waitSec, callback) {
 /*  ガイド  */
 client.on("ready", () => {
     console.log(`${client.user.tag}として、準備が完了しました。\nBotをご利用いただけます。`);
-    cron.schedule("0,30 * * * * *", () => {
+    cron.schedule("0 * * * * *", () => {
         client.user.setPresence({
             activity: {
                 name:
-                    `${client.guilds.cache.size}サーバー ${client.users.cache.size}メンバー ${client.ws.ping / 1000}秒で反応 | API作成: MonHu`
+                    `${client.guilds.cache.size}サーバー ${client.users.cache.size}メンバー ${client.ws.ping}ms | API作成: MonHu`
             },
             status: "online"
         });
